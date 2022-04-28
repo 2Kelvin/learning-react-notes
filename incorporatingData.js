@@ -65,8 +65,21 @@
 // it’s possible to make an application faster by sending all requests at once
 // here, the components fetching the requests are placed side by side of each other
 // ie) they're all on the same level to one another
+// & we’re attempting to get all the data we need immediately at the same time
 // "Parallel and Waterfall Requests" can work together/ with each other
 // sometimes it’s hard to make every request right when your app initially renders
 // therefore in such cases, it's okay to use "Waterfall Requests" with the "Parallel Requests"
+// it's always a good idea to test your app under slow network conditions to reveal & eliminate bugs
 
-// WAITING FOR VALUES
+// GRAPHQL
+// GraphQL is a declarative solution for communicating with APIs
+// GraphQL was designed to make parallel data requests/ get all the data we need immediately and at the same time
+// In order to get data from a GraphQL API, we still need to make an HTTP request to a specific URI
+// we also need to send a query along with the request
+// a "GraphQL query" is a declarative description of the data we’re requesting
+// The service will parse this description and then package all the data we’re asking for into a single response
+// In order to use GraphQL in your React application, the backend service you’re communicating with needs to be built following GraphQL specifications
+// Most "GraphQL services" provide a way to explore the GraphQL API
+
+// MAKING A GRAPHQL REQUEST
+// 
