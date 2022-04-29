@@ -82,4 +82,8 @@
 // Most "GraphQL services" provide a way to explore the GraphQL API
 
 // MAKING A GRAPHQL REQUEST
-// 
+// A GraphQL request is an HTTP request that contains a query in the body of the request
+// You can use fetch to make a GraphQL request
+// other libraries and frameworks can also be used to make GraphQL requests eg) "graphql-request" library
+// GraphQL is not restricted to HTTP
+// It can technically work with any network protocol
